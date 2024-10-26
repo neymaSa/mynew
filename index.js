@@ -15,7 +15,7 @@ import Message from './models/message.js'
 
 const app = express()
 
-app.use(cors({origin:"https://mynew-2.onrender.com",credentials:true}))
+app.use(cors({origin:"https://mynew-3.onrender.com",credentials:true}))
 app.use(express.json())
 app.use(cookieParser())
 
