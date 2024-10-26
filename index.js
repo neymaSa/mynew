@@ -19,7 +19,9 @@ app.use(cors({origin:"https://mynew-3.onrender.com",credentials:true}))
 app.use(express.json())
 app.use(cookieParser())
 
-
+app.get('/', function (req, res) {
+  res.send({ title: 'GeeksforGeeks' });
+});
 
 mongoose.connect("mongodb+srv://j:1@cluster0.6owpk.mongodb.net/").then(() => console.log("Db Connected"))
 .catch((error) => console.log(error))
