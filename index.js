@@ -15,7 +15,7 @@ import Message from './models/message.js'
 
 const app = express()
 
-app.use(cors({origin:"https://mynew-3.onrender.com",credentials:true}))
+app.use(cors({origin:"https://chess-al5q.onrender.com",credentials:true}))
 app.use(express.json())
 app.use(cookieParser())
 
@@ -41,7 +41,7 @@ const server = http.createServer(app)
 
 const io = new Server(server,{
   cors:{
-    origin:"http://localhost:3000",
+    origin:"https://chess-al5q.onrender.com",
     methods:["GET","POST"]
 }
 })
